@@ -1,0 +1,354 @@
+.cs-pointer {
+  cursor: pointer;
+}
+
+.flash-message {
+  position: relative;
+  .success {
+    background-color: #d6e7fe;
+    color: blue;
+  }
+  .warning {
+    background-color: #f5e3cd;
+    color: #fd9426;
+  }
+  .cover {
+    position: fixed;
+    top: 100px;
+    right: 2%;
+    border: 1px solid;
+    padding: 10px 30px;
+    z-index: 999;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.login-homepage-form {
+  min-height: 100vh !important;
+  background: url("/images/yasuo.png") no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  .content-login {
+    padding: 45px 35px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    opacity: 0.86;
+    .logo-left {
+      padding: 0 10px 0 0px;
+      img {
+        width: 119px;
+      }
+    }
+    .login-box-body {
+      padding: 0 !important;
+      .green-strong {
+        padding: 35px 0 12px 0;
+        margin: 0;
+        color: #339902 !important;
+        font-size: 18px;
+        line-height: 22px;
+      }
+      p {
+        color: #000000;
+        line-height: 21px;
+        margin-bottom: 33px;
+      }
+      .form-login {
+        .form-group {
+          input {
+            margin-bottom: 15px;
+            width: 100%;
+            height: 45px;
+            padding: 15px;
+            border: 1px solid #BED0C5;
+            border-radius: 3px;
+            &:hover {
+              border: 1px solid #339902;
+            }
+          }
+        }
+        .registration {
+          float: right;
+          border: none;
+          border-radius: 5px;
+          background: linear-gradient(270deg, #78B00A 0%, #339902 100%);
+          box-shadow: 0 2px 0 0 rgba(51, 153, 2, 0.5);
+          margin-top: 0;
+        }
+        .registration-disabled {
+          float: right;
+          border: none;
+          border-radius: 5px;
+          background: #5a6268;
+          margin-top: 0;
+        }
+        button {
+          color: #FFFFFF;
+          line-height: 16px;
+          padding: 17px;
+        }
+        .button-left, .button-right {
+          padding: 0;
+        }
+      }
+      .go-homepage {
+        i {
+          margin-right: 10px;
+        }
+        text-align: center;
+        margin-top: 47px;
+        color: #339902;
+      }
+    }
+  }
+}
+
+.connect-facebook {
+  .text-or {
+    position: relative;
+    margin-bottom: 20px;
+    &:after {
+      left: 0;
+      top: 50%;
+      position: absolute;
+      content: '';
+      width: 43%;
+      height: 1px;
+      background: #BED0C5;
+    }
+    &:before {
+      right: 0;
+      top: 50%;
+      position: absolute;
+      content: '';
+      width: 43%;
+      height: 1px;
+      background: #BED0C5;
+    }
+  }
+  a {
+    color: #FFFFFF;
+    line-height: 16px;
+    padding: 15px 22px;
+  }
+  .facebook {
+    border: none;
+    background: linear-gradient(270deg, #78B00A 0%, #339902 100%);
+    box-shadow: 0 2px 0 0 rgba(51, 153, 2, 0.5);
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+  .register {
+    border: none;
+    background: linear-gradient(270deg, $color-01 0%, $color-03 100%);
+    box-shadow: 0 2px 0 0 rgba(51, 153, 2, 0.5);
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .go-homepage {
+    i {
+      margin-right: 10px;
+    }
+    text-align: center;
+    margin-top: 47px;
+    color: #339902;
+  }
+}
+
+.full-with {
+  width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor {
+  cursor: none;
+}
+
+.cursor-wait {
+  cursor: wait;
+}
+
+.link-color {
+  color: #00a7d0 !important;
+}
+
+.comment {
+  .v-comment-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+  }
+
+  .actions-right {
+    display: flex;
+  }
+
+  .separator {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    color: #979797;
+    font-weight: bold;
+  }
+
+  .date {
+    color: #979797;
+    font-size: 70%;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .like-button {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+
+    .count {
+      font-weight: bold;
+      font-size: 80%;
+      color: #979797;
+      margin-right: 1em;
+    }
+
+    &:hover {
+      i {
+        color: #db6e6e !important;
+      }
+
+      .count {
+        color: #db6e6e;
+      }
+    }
+  }
+
+  .v-bookmark:hover {
+    color: #edb431;
+  }
+
+  .v-reply:hover {
+    color: #78b38a;
+  }
+
+  .el-icon-more-outline:hover {
+    color: #000;
+  }
+}
+
+
+.notifications {
+  list-style: none;
+  padding: 0;
+}
+
+.notification {
+  display: block;
+  padding: 9.6px 12px;
+  border-bottom: 1px solid #eeeeee;
+  color: #333333;
+  text-decoration: none;
+}
+
+.notification:last-child {
+  border-bottom: 0;
+}
+
+.notification:hover,
+.notification.active:hover {
+  background-color: #f9f9f9;
+}
+
+.notification.active {
+  background-color: #f4f4f4;
+}
+
+.notification-title {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.notification-desc {
+  margin-bottom: 0;
+}
+
+.notification-meta {
+  color: #777777;
+}
+
+a.notification:hover {
+  text-decoration: none;
+}
+
+.dropdown-notifications > .dropdown-container,
+.dropdown-notifications > .dropdown-menu {
+  width: 450px;
+  max-width: 450px;
+}
+
+.dropdown-notifications .dropdown-menu {
+  padding: 0;
+}
+
+.dropdown-notifications .dropdown-toolbar,
+.dropdown-notifications .dropdown-footer {
+  padding: 9.6px 12px;
+}
+
+.dropdown-notifications .dropdown-toolbar {
+  background: #fff;
+}
+
+.dropdown-notifications .dropdown-footer {
+  background: #eeeeee;
+}
+
+.notification .media-body {
+  padding-top: 5.6px;
+}
+
+.btn-lg .notification-icon:after {
+  margin-left: -8.253px;
+  margin-top: -8.253px;
+  min-width: 16.506px;
+  height: 16.506px;
+  line-height: 16.506px;
+  font-size: 13.755px;
+}
+
+.btn-xs .notification-icon:after {
+  content: '';
+  margin-left: -4.1265px;
+  margin-top: -2.06325px;
+  min-width: 6.25227273px;
+  height: 6.25227273px;
+  line-height: 6.25227273px;
+  padding: 0;
+}
+
+.btn-xs .notification-icon {
+  margin-right: 3.43875px;
+}
+
+.is-read-notification {
+  background-color: #fff;
+}
+
+.not-read-notification {
+  background-color: #edf2fa;
+}

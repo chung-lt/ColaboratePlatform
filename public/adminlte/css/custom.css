@@ -1,0 +1,66 @@
+html,css{
+    height: 100%;
+}
+
+.message-list, .about-channel, .thread{
+    height: 85%;
+}
+
+.new-message{
+    height: 15%;
+}
+
+.h-90{
+    height: 90%;
+}
+.h-10{
+    height: 10%;
+}
+
+.el-textarea > textarea{
+    max-height: 90% !important;
+}
+
+.nav-link:hover{
+    background-color: #5685ff;
+}
+
+.nav-item.active{
+    background-color:#5685ff;
+}
+.active .menu-title{
+    color:white;
+    font-weight: bold;
+}
+
+@media (max-width: 767.98px) {
+    .navbar-collapse{
+        background-color:#2b2e96 !important;
+    }
+
+    .nav-link{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .nav-category *{
+        color: white !important;
+    }
+    .searchForm input{
+        width: 100%;
+    }
+
+    #rightElement{
+        position: absolute;
+        z-index: -1;
+        background: white;
+        padding-right: 50px;
+    }
+}
+
+#files .nav-link:hover{
+    text-decoration: underline;
+}
+
+.comment:hover{
+    background: #f2f2f3;
+}
